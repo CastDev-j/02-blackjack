@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego Cartas</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+    <header class="titulo text-center">
+        BlackJack
+    </header>
+
+    <div class="row mt-2 buttons-container">
+        <div class="col text-center" id="button-events">
+            <button class="btn btn-danger" id="btnNuevo">Nuevo Juego</button>
+            <button class="btn btn-primary" id="btnPedir">Pedir Carta</button>
+            <button class="btn btn-primary" id="btnDetener" disabled>Detener</button>
+        </div>
+    </div>
+
+    <div class="row container game-container">
+        <div class="col">
+
+            <h1>Jugador 1 - <small>0</small></h1>
+
+            <div id="jugador-cartas" class="cartas-container">
+            
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row container game-container">
+        <div class="col">
+
+            <h1>Computadora - <small>0</small></h1>
+
+            <div id="computadora-cartas" class="cartas-container">
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <script type="module" src="assets/js/juego.js"></script>
+</body>
+
+</html>
